@@ -7,6 +7,7 @@ void main(){
     int[] array = new int[amount];
 
     array = generateRandomArr(array);
+    writeln(array);
     Bubblesort bubble = new Bubblesort.Bubblesort();
     bubble.sort(array);
     writeln(array);
