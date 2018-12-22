@@ -1,4 +1,4 @@
 compile:
-	ldc test.d SortingAlgorithms/*.d
+	ldc TestAlgorithms.d SortingAlgorithms/*.d
 run:
-	./test
+	./TestAlgorithms
