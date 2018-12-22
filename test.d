@@ -1,19 +1,20 @@
 import std.stdio;
 import std.random;
-import sortingalgorithms.bubblesort;
+import Bubblesort;
 
 void main(){
-    int amount = 16;
-    int[] array;
-    generateRandomArr(array, amount);
-    bubblesort(array);
+    const int amount = 16;
+    int[] array = new int[amount];
+
+    array = generateRandomArr(array);
+    Bubblesort bubble = new Bubblesort.Bubblesort();
+    bubble.sort(array);
     writeln(array);
-    object.destroy(array);
 }
 
-int[] generateRandomArr(int[] array, int amount){
-    foreach (x; array){
-        array[x] = uniform(0,9);
+int[] generateRandomArr(int[] ret_array){
+    for(int x = 0; x < ret_array.length; x++){
+        ret_array[x] = uniform(0,9);
     }
-    return array;
+    return ret_array;
 }
