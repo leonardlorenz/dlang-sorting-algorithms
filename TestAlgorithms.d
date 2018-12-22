@@ -7,20 +7,17 @@ void main(){
     const int amount = 16;
     int[] array = new int[amount];
 
-    writeln("\n--- bubble sort ---");
-    generateRandomArr(array);
-    writeln(array);
-    BubbleSort bubble = new BubbleSort.BubbleSort();
-    bubble.sort(array);
-    writeln(array);
+    SortingAlgoritm[] sortArr = new SortingAlgoritm[2];
+    sortArr[0] = new BubbleSort.BubbleSort();
+    sortArr[1] = new InsertionSort.InsertionSort();
 
-    writeln("\n--- insertion sort ---");
-    generateRandomArr(array);
-    writeln(array);
-    InsertionSort insertion = new InsertionSort.InsertionSort();
-    insertion.sort(array);
-    writeln(array);
-
+    foreach(sortAlg; sortArr){
+        writeln("\n--- " + sortAlg.name + " ---");
+        generateRandomArr(array);
+        writeln(array);
+        sortAlg.sort(array);
+        writeln(array);
+    }
 }
 
 void generateRandomArr(int[] ret_array){
