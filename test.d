@@ -1,6 +1,7 @@
 import std.stdio;
 import std.random;
-import Bubblesort;
+import BubbleSort;
+import InsertionSort;
 
 void main(){
     const int amount = 16;
@@ -8,7 +9,7 @@ void main(){
 
     generateRandomArr(array);
     writeln(array);
-    Bubblesort bubble = new Bubblesort.Bubblesort();
+    BubbleSort bubble = new BubbleSort.BubbleSort();
     bubble.sort(array);
     writeln(array);
 }

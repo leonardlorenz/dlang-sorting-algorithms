@@ -1,6 +1,6 @@
 import SortingAlgorithmINTF;
 
-class Bubblesort : SortingAlgorithm{
+class BubbleSort : SortingAlgorithm{
     void sort(int[] array){
         for(int x = cast(int) array.length - 1; x > 0; x--){
             for(int y = 0; x > y; y++){
