@@ -1,6 +1,10 @@
 import SortingAlgorithmINTF;
+import std.string;
 
 class BubbleSort : SortingAlgorithm{
+
+    public string name() { return "bubble sort";};
+
     void sort(int[] array){
         int arraySize = cast(int) array.length;
         for(int x = arraySize - 1; x > 0; x--){

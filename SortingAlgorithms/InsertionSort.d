@@ -1,6 +1,10 @@
 import SortingAlgorithmINTF;
+import std.string;
 
 class InsertionSort : SortingAlgorithm{
+
+    public string name() { return "insertion sort";};
+
     void sort(int[] array){
         int arraySize = cast(int) array.length;
         int x;
