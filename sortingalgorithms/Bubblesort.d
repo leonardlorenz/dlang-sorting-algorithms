@@ -1,5 +1,4 @@
 import SortingAlgorithmINTF;
-import std.stdio;
 
 class Bubblesort : SortingAlgorithm{
     void sort(int[] array){
