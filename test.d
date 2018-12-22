@@ -1,12 +1,12 @@
 import std.stdio;
 import std.random;
-import bubblesort;
+import sortingalgorithms.bubblesort;
 
 void main(){
     int amount = 16;
     int[] array;
     generateRandomArr(array, amount);
-    bubblesort.sort(array);
+    bubblesort(array);
     writeln(array);
     object.destroy(array);
 }
