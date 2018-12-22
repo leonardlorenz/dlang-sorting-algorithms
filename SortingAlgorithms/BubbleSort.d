@@ -2,7 +2,8 @@ import SortingAlgorithmINTF;
 
 class BubbleSort : SortingAlgorithm{
     void sort(int[] array){
-        for(int x = cast(int) array.length - 1; x > 0; x--){
+        int arraySize = cast(int) array.length;
+        for(int x = arraySize - 1; x > 0; x--){
             for(int y = 0; x > y; y++){
                 if(array[y] > array[y + 1]){
                     int temp = array[y];
