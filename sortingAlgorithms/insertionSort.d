@@ -1,4 +1,4 @@
-import SortingAlgorithmINTF;
+import sortingAlgorithmINTF;
 import std.string;
 
 class InsertionSort : SortingAlgorithm{

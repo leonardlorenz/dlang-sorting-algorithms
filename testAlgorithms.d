@@ -1,15 +1,16 @@
 import std.stdio;
 import std.random;
-import BubbleSort;
-import InsertionSort;
+import bubbleSort;
+import insertionSort;
 
 void main(){
     const int amount = 16;
     int[] array = new int[amount];
 
     SortingAlgoritm[] sortArr = new SortingAlgoritm[2];
-    sortArr[0] = new BubbleSort.BubbleSort();
-    sortArr[1] = new InsertionSort.InsertionSort();
+    sortArr[0] = new bubbleSort.BubbleSort();
+    sortArr[1] = new insertionSort.InsertionSort();
+    sortArr[2] = new quickSort.InsertionSort();
 
     foreach(sortAlg; sortArr){
         writeln("\n--- " + sortAlg.name + " ---");
