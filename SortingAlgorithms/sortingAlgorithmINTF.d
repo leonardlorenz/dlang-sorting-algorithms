@@ -1,6 +1,6 @@
 import std.string;
 
-interface SortingAlgorithm{
+interface SortingAlgorithm {
 
     void sort(int[] array);
 

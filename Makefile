@@ -1,6 +1,8 @@
 compile:
-	ldc TestAlgorithms.d SortingAlgorithms/*.d
+	ldc testAlgorithms.d SortingAlgorithms/*.d
+
 run:
-	./TestAlgorithms
+	./testAlgorithms
+
 clean:
-	rm TestAlgorithms.o TestAlgorithms
+	rm testAlgorithms testAlgorithms.o
